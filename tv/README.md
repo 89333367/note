@@ -1,2 +1,20 @@
-# note
-笔记
+# 点播软件(TV版)
+https://gh-proxy.com/https://github.com/FongMi/Release/blob/fongmi/apk/release/leanback-arm64_v8a.apk
+
+# 点播软件(手机版)
+https://gh-proxy.com/https://github.com/FongMi/Release/blob/fongmi/apk/release/mobile-arm64_v8a.apk
+
+# 点播源
+http://xhztv.top/dc
+
+
+# 直播软件
+https://gitee.com/mytv-android/mytvstable/releases
+
+# 直播源(webview)
+https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/webview.m3u
+
+
+# 更多源
+http://cctv.l5.ca
+
