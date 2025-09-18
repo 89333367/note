@@ -1,3 +1,8 @@
+# 本页面地址
+https://github.com/89333367/note/blob/main/tv/README.md
+# 如果访问不了试试这个
+https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/README.md
+
 # 点播软件(TV版)
 https://gh-proxy.com/https://github.com/FongMi/Release/blob/fongmi/apk/release/leanback-arm64_v8a.apk
 
