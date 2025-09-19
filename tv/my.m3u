@@ -164,11 +164,11 @@ webview://https://yangshipin.cn/tv/home?pid=600084704
 webview://https://yangshipin.cn/tv/home?pid=600084744
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/CGTN阿语.png" group-title="央视频",CGTN阿语
 webview://https://yangshipin.cn/tv/home?pid=600084782
-#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/风云剧场.png" group-title="央视频",CCTV 风云剧场
+#EXTINF:-1 tvg-name="CCTV风云剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/风云剧场.png" group-title="央视频",CCTV 风云剧场
 webview://https://yangshipin.cn/tv/home?pid=600099658
-#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/第一剧场.png" group-title="央视频",CCTV 第一剧场
+#EXTINF:-1 tvg-name="CCTV第一剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/第一剧场.png" group-title="央视频",CCTV 第一剧场
 webview://https://yangshipin.cn/tv/home?pid=600099655
-#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/怀旧剧场.png" group-title="央视频",CCTV 怀旧剧场
+#EXTINF:-1 tvg-name="CCTV怀旧剧场" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/怀旧剧场.png" group-title="央视频",CCTV 怀旧剧场
 webview://https://yangshipin.cn/tv/home?pid=600099620
 
 
