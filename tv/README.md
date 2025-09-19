@@ -16,11 +16,8 @@ http://xhztv.top/dc
 # 直播软件
 https://gitee.com/mytv-android/mytvstable/releases
 
-# 直播源(webview可回放)
-https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/webview.m3u
-
 # 直播源
-https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/iptv.m3u
+https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/my.m3u
 
 # 直播源
 https://live.hacks.tools/tv/iptv4.m3u
