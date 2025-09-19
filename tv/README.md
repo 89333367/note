@@ -19,11 +19,3 @@ https://gitee.com/mytv-android/mytvstable/releases
 # 直播源
 https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/my.m3u
 
-# 直播源
-https://live.hacks.tools/tv/iptv4.m3u
-https://git.neofung.org/neo/iptv/raw/branch/master/iptv+.m3u
-
-
-# 更多源
-http://cctv.l5.ca
-

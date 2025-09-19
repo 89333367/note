@@ -39,6 +39,11 @@ webview://https://tv.cctv.com/live/cctv16/
 webview://https://tv.cctv.com/live/cctv17/
 
 
+## 央视频
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/北京卫视.png" group-title="央视频" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",北京卫视
+webview://https://yangshipin.cn/tv/home?pid=600002309
+
+
 ## 春晚频道
 #EXTINF:-1 tvg-name="春晚1983年" tvg-logo="https://live.fanmingming.com/tv/春晚1983年.png" group-title="春晚频道",春晚1983年
 https://alimov2.a.kwimgs.com/upic/2022/01/31/15/BMjAyMjAxMzExNTU5MTRfNDAzMDAxOTlfNjYyNzMxNjcwMjBfMF8z_b_Beb3bda599f76c60c463c433ca7460153.mp4
