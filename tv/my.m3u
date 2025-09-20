@@ -82,7 +82,7 @@ webview://https://yangshipin.cn/tv/home?pid=600002531
 webview://https://yangshipin.cn/tv/home?pid=600002481
 #EXTINF:-1 tvg-name="四川卫视" group-title="央视频",四川卫视
 webview://https://yangshipin.cn/tv/home?pid=600002516
-#EXTINF:-1 tvg-name="河南卫视" group-title="央视频" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",河南卫视
+#EXTINF:-1 tvg-name="河南卫视" group-title="央视频",河南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002525
 #EXTINF:-1 tvg-name="东南卫视" group-title="央视频",福建东南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002484
@@ -328,7 +328,7 @@ https://live1-fuyun.fjtv.net/dnpd/hd/live.m3u8?_upt=44a366c61758358017
 https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
 #EXTINF:-1 tvg-name="贵州卫视" group-title="卫视直播",贵州卫视
 https://9bwaz8y2.gzstv.com/live/CH01_lo.m3u8?txSecret=fcf39ac16863e52f1767ee5b617011cd&txTime=68CE3BEE
-#EXTINF:-1 tvg-name="海南卫视" group-title="卫视直播",海南卫视
+#EXTINF:-1 tvg-name="海南卫视" group-title="卫视直播" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",海南卫视
 https://livelyws.chinamcache.com/lyws/zb03.m3u8
 #EXTINF:-1 tvg-name="河北卫视" group-title="卫视直播",河北卫视
 https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1758355220&k=10eaf834b5c18557cf11a24e4f2c45e1
