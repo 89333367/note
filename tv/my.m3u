@@ -210,8 +210,6 @@ webview://https://www.gdtv.cn/tvChannelDetail/42
 webview://https://www.gdtv.cn/tvChannelDetail/15
 #EXTINF:-1 tvg-name="广东移动" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广东移动.png" group-title="荔枝网",广东移动
 webview://https://www.gdtv.cn/tvChannelDetail/74
-#EXTINF:-1 tvg-name="荔枝台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/荔枝台.png" group-title="荔枝网",荔枝台
-webview://https://www.gdtv.cn/tvChannelDetail/100
 #EXTINF:-1 tvg-name="纪录片" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/纪录片.png" group-title="荔枝网",纪录片
 webview://https://www.gdtv.cn/tvChannelDetail/94
 #EXTINF:-1 tvg-name="GRTN健康频道" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/GRTN健康频道.png" group-title="荔枝网",GRTN健康频道
