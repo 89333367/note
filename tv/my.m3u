@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://e.erw.cc/all.xml.gz"
+#EXTM3U x-tvg-url="https://e.erw.cc/all.xml.gz,https://live.kilvn.com/epg.xml.gz,https://e.erw.cc/all.xml.gz,http://epg.51zmt.top:8000/e.xml.gz"
 
 
 
@@ -76,7 +76,7 @@ webview://https://yangshipin.cn/tv/home?pid=600002509
 webview://https://yangshipin.cn/tv/home?pid=600002498
 #EXTINF:-1 tvg-name="海南卫视" group-title="央视频",海南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002506
-#EXTINF:-1 tvg-name="重庆卫视" group-title="央视频",重庆卫视
+#EXTINF:-1 tvg-name="重庆卫视" group-title="央视频" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",重庆卫视
 webview://https://yangshipin.cn/tv/home?pid=600002531
 #EXTINF:-1 tvg-name="深圳卫视" group-title="央视频",深圳卫视
 webview://https://yangshipin.cn/tv/home?pid=600002481
