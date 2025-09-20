@@ -324,10 +324,6 @@ https://live1.ahtv.cn/ahws/playlist.m3u8?_upt=6418302f1758355217
 https://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s1/index.m3u8?time=1758348007&sign=08feec55ce401a85d88015b94636934c
 #EXTINF:-1 tvg-name="东南卫视" group-title="卫视直播",东南卫视
 https://live1-fuyun.fjtv.net/dnpd/hd/live.m3u8?_upt=44a366c61758358017
-#EXTINF:-1 tvg-name="东方卫视" group-title="卫视直播",东方卫视
-{DONGFANGTV}
-#EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视直播",甘肃卫视
-{GANSUTV}
 #EXTINF:-1 tvg-name="广西卫视" group-title="卫视直播",广西卫视
 https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
 #EXTINF:-1 tvg-name="贵州卫视" group-title="卫视直播",贵州卫视
@@ -344,10 +340,6 @@ http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playl
 https://hls.avap.jilintv.cn/zqvk7vpj/channel/0533b55e42354f4f802bdec78e26b571/index.m3u8?txSecret=25421ca047f7962767345f059f257938&txTime=68CE7BBB
 #EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视直播",内蒙古卫视
 https://livestream-bt.nmtv.cn/nmtv/3208526general.m3u8?txSecret=eb5a3102dd5406c7ffeddf560b024952&txTime=76B2F9A0&token=97c4264a7d0b4a198d69519124f660b4
-#EXTINF:-1 tvg-name="青海卫视" group-title="卫视直播",青海卫视
-{QINGHAITV}
-#EXTINF:-1 tvg-name="山东卫视" group-title="卫视直播" http-referrer="https://v.iqilu.com/",山东卫视
-{SHANDONGTV}
 #EXTINF:-1 tvg-name="山西卫视" group-title="卫视直播",山西卫视
 https://livehhhttps.sxrtv.com/lsdream/q8RVWgs/1000/x1sqrR0.m3u8
 #EXTINF:-1 tvg-name="陕西卫视" group-title="卫视直播",陕西卫视
