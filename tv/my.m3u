@@ -182,7 +182,7 @@ webview://https://yangshipin.cn/tv/home?pid=600099620
 
 
 
-#EXTINF:-1 tvg-name="广东卫视" group-title="荔枝网" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",广东卫视
+#EXTINF:-1 tvg-name="广东卫视" group-title="荔枝网",广东卫视
 webview://https://www.gdtv.cn/tvChannelDetail/43
 #EXTINF:-1 tvg-name="广东珠江" group-title="荔枝网",广东珠江
 webview://https://www.gdtv.cn/tvChannelDetail/44
@@ -306,3 +306,68 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5251197255879398624_hlshd15.m3u8
 https://ikcdn01.ikzybf.com/20240205/QBNgom4j/2000kb/hls/index.m3u8
 #EXTINF:-1 tvg-name="春晚2025年" group-title="春晚频道",春晚2025年
 https://svip.high24-playback.com/20250129/17159_7bca93c4/2000k/hls/mixed.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="安徽卫视" group-title="卫视直播" http-referrer="https://www.ahtv.cn/",安徽卫视
+https://live1.ahtv.cn/ahws/playlist.m3u8?_upt=6418302f1758355217
+#EXTINF:-1 tvg-name="北京卫视" group-title="卫视直播",北京卫视
+https://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s1/index.m3u8?time=1758348007&sign=08feec55ce401a85d88015b94636934c
+#EXTINF:-1 tvg-name="东南卫视" group-title="卫视直播",东南卫视
+https://live1-fuyun.fjtv.net/dnpd/hd/live.m3u8?_upt=44a366c61758358017
+#EXTINF:-1 tvg-name="东方卫视" group-title="卫视直播",东方卫视
+{DONGFANGTV}
+#EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视直播",甘肃卫视
+{GANSUTV}
+#EXTINF:-1 tvg-name="广西卫视" group-title="卫视直播",广西卫视
+https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
+#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视直播",贵州卫视
+https://9bwaz8y2.gzstv.com/live/CH01_lo.m3u8?txSecret=fcf39ac16863e52f1767ee5b617011cd&txTime=68CE3BEE
+#EXTINF:-1 tvg-name="海南卫视" group-title="卫视直播",海南卫视
+https://livelyws.chinamcache.com/lyws/zb03.m3u8
+#EXTINF:-1 tvg-name="河北卫视" group-title="卫视直播",河北卫视
+https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1758355220&k=10eaf834b5c18557cf11a24e4f2c45e1
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视直播",黑龙江卫视
+https://idclive.hljtv.com:4430/live/hljws_own.m3u8
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视直播",河南卫视
+http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=a14fcc64bd5ea11053dee467fb313fa2&wsTime=1758362405&wsSession=563339fd16efb0470cac6268-175834800640365&wsIPSercert=965199407363e75c3ccb566d6f002965&wsiphost=local&wsBindIP=1
+#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视直播",吉林卫视
+https://hls.avap.jilintv.cn/zqvk7vpj/channel/0533b55e42354f4f802bdec78e26b571/index.m3u8?txSecret=25421ca047f7962767345f059f257938&txTime=68CE7BBB
+#EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视直播",内蒙古卫视
+https://livestream-bt.nmtv.cn/nmtv/3208526general.m3u8?txSecret=eb5a3102dd5406c7ffeddf560b024952&txTime=76B2F9A0&token=97c4264a7d0b4a198d69519124f660b4
+#EXTINF:-1 tvg-name="青海卫视" group-title="卫视直播",青海卫视
+{QINGHAITV}
+#EXTINF:-1 tvg-name="山东卫视" group-title="卫视直播" http-referrer="https://v.iqilu.com/",山东卫视
+{SHANDONGTV}
+#EXTINF:-1 tvg-name="山西卫视" group-title="卫视直播",山西卫视
+https://livehhhttps.sxrtv.com/lsdream/q8RVWgs/1000/x1sqrR0.m3u8
+#EXTINF:-1 tvg-name="陕西卫视" group-title="卫视直播",陕西卫视
+http://stream.snrtv.com/sxbc-star-lIMR67.m3u8
+#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视直播",西藏卫视
+https://tv.vtibet.cn/live/h701F9MpxzPDyE.m3u8?secret=04abde4e2c97da0a4cda2aed361b55a8&time=68ce42e4
+#EXTINF:-1 tvg-name="新疆卫视" group-title="卫视直播",新疆卫视
+https://slstplay.xjtvs.com.cn/xjtv1/xjtv1stream.m3u8?auth_key=1758351602-8-8-032e0792e5d3cf5448aad4ef99f248d4&aliyun_uuid=3d181a5d-0ab1-43a1-a4f4-36e753340556
+#EXTINF:-1 tvg-name="云南卫视" group-title="卫视直播",云南卫视
+https://hwapi.yntv.net/62hdvf/41hse3.m3u8
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视直播",浙江卫视
+https://zwebl02.cztv.com/live/channel011080P.m3u8?auth_key=1758348023-n6a2wu0obtdsfsiqumi9uge7hx58yjij-0-b5ebf02c02be4555f526e03698d4f966
+
+
+
+
+
+
+
+
+
+
+
