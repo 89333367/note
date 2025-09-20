@@ -35,3 +35,6 @@ https://gh-proxy.com/https://github.com/89333367/note/raw/refs/heads/main/tv/my.
 
 https://gh.catmak.name/https://github.com/89333367/note/raw/refs/heads/main/tv/my.m3u
 
+
+https://live.hacks.tools/tv/iptv4.m3u
+
