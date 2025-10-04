@@ -5,434 +5,129 @@
 
 
 
-#EXTINF:-1 tvg-name="CCTV1" group-title="央视频",CCTV-1 综合
+#EXTINF:-1 tvg-name="CCTV1" group-title="央视",CCTV-1 综合
 webview://https://yangshipin.cn/tv/home?pid=600001859
-#EXTINF:-1 tvg-name="CCTV2" group-title="央视频",CCTV-2 财经
+#EXTINF:-1 tvg-name="CCTV2" group-title="央视",CCTV-2 财经
 webview://https://yangshipin.cn/tv/home?pid=600001800
-#EXTINF:-1 tvg-name="CCTV3" group-title="央视频",CCTV-3 综艺
+#EXTINF:-1 tvg-name="CCTV3" group-title="央视",CCTV-3 综艺
 webview://https://yangshipin.cn/tv/home?pid=600001801
-#EXTINF:-1 tvg-name="CCTV4" group-title="央视频",CCTV-4 中文国际
+#EXTINF:-1 tvg-name="CCTV4" group-title="央视",CCTV-4 中文国际
 webview://https://yangshipin.cn/tv/home?pid=600001814
-#EXTINF:-1 tvg-name="CCTV5" group-title="央视频",CCTV-5 体育
+#EXTINF:-1 tvg-name="CCTV5" group-title="央视",CCTV-5 体育
 webview://https://yangshipin.cn/tv/home?pid=600001818
-#EXTINF:-1 tvg-name="CCTV5+" group-title="央视频",CCTV-5+ 体育赛事
+#EXTINF:-1 tvg-name="CCTV5+" group-title="央视",CCTV-5+ 体育赛事
 webview://https://yangshipin.cn/tv/home?pid=600001817
-#EXTINF:-1 tvg-name="CCTV6" group-title="央视频",CCTV-6 电影
+#EXTINF:-1 tvg-name="CCTV6" group-title="央视",CCTV-6 电影
 webview://https://yangshipin.cn/tv/home?pid=600108442
-#EXTINF:-1 tvg-name="CCTV7" group-title="央视频",CCTV-7 国防军事
+#EXTINF:-1 tvg-name="CCTV7" group-title="央视",CCTV-7 国防军事
 webview://https://yangshipin.cn/tv/home?pid=600004092
-#EXTINF:-1 tvg-name="CCTV8" group-title="央视频",CCTV-8 电视剧
+#EXTINF:-1 tvg-name="CCTV8" group-title="央视",CCTV-8 电视剧
 webview://https://yangshipin.cn/tv/home?pid=600001803
-#EXTINF:-1 tvg-name="CCTV9" group-title="央视频",CCTV-9 纪录
+#EXTINF:-1 tvg-name="CCTV9" group-title="央视",CCTV-9 纪录
 webview://https://yangshipin.cn/tv/home?pid=600004078
-#EXTINF:-1 tvg-name="CCTV10" group-title="央视频",CCTV-10 科教
+#EXTINF:-1 tvg-name="CCTV10" group-title="央视",CCTV-10 科教
 webview://https://yangshipin.cn/tv/home?pid=600001805
-#EXTINF:-1 tvg-name="CCTV11" group-title="央视频",CCTV-11 戏曲
+#EXTINF:-1 tvg-name="CCTV11" group-title="央视",CCTV-11 戏曲
 webview://https://yangshipin.cn/tv/home?pid=600001806
-#EXTINF:-1 tvg-name="CCTV12" group-title="央视频",CCTV-12 社会与法
+#EXTINF:-1 tvg-name="CCTV12" group-title="央视",CCTV-12 社会与法
 webview://https://yangshipin.cn/tv/home?pid=600001807
-#EXTINF:-1 tvg-name="CCTV13" group-title="央视频",CCTV-13 新闻
+#EXTINF:-1 tvg-name="CCTV13" group-title="央视",CCTV-13 新闻
 webview://https://yangshipin.cn/tv/home?pid=600001811
-#EXTINF:-1 tvg-name="CCTV14" group-title="央视频",CCTV-14 少儿
+#EXTINF:-1 tvg-name="CCTV14" group-title="央视",CCTV-14 少儿
 webview://https://yangshipin.cn/tv/home?pid=600001809
-#EXTINF:-1 tvg-name="CCTV15" group-title="央视频",CCTV-15 音乐
+#EXTINF:-1 tvg-name="CCTV15" group-title="央视",CCTV-15 音乐
 webview://https://yangshipin.cn/tv/home?pid=600001815
-#EXTINF:-1 tvg-name="CCTV16" group-title="央视频",CCTV-16 奥林匹克
+#EXTINF:-1 tvg-name="CCTV16" group-title="央视",CCTV-16 奥林匹克
 webview://https://yangshipin.cn/tv/home?pid=600098637
-#EXTINF:-1 tvg-name="CCTV17" group-title="央视频",CCTV-17 农业农村
+#EXTINF:-1 tvg-name="CCTV17" group-title="央视",CCTV-17 农业农村
 webview://https://yangshipin.cn/tv/home?pid=600001810
-#EXTINF:-1 tvg-name="CGTN" group-title="央视频",CGTN英语
+#EXTINF:-1 tvg-name="CGTN" group-title="央视",CGTN英语
 webview://https://yangshipin.cn/tv/home?pid=600014550
-#EXTINF:-1 tvg-name="CGTN纪录" group-title="央视频",CGTN记录
+#EXTINF:-1 tvg-name="CGTN纪录" group-title="央视",CGTN记录
 webview://https://yangshipin.cn/tv/home?pid=600084781
-#EXTINF:-1 tvg-name="CGTN俄语" group-title="央视频",CGTN俄语
+#EXTINF:-1 tvg-name="CGTN俄语" group-title="央视",CGTN俄语
 webview://https://yangshipin.cn/tv/home?pid=600084758
-#EXTINF:-1 tvg-name="CGTN法语" group-title="央视频",CGTN法语
+#EXTINF:-1 tvg-name="CGTN法语" group-title="央视",CGTN法语
 webview://https://yangshipin.cn/tv/home?pid=600084704
-#EXTINF:-1 tvg-name="CGTN西语" group-title="央视频",CGTN西语
+#EXTINF:-1 tvg-name="CGTN西语" group-title="央视",CGTN西语
 webview://https://yangshipin.cn/tv/home?pid=600084744
-#EXTINF:-1 tvg-name="CGTN阿语" group-title="央视频",CGTN阿语
+#EXTINF:-1 tvg-name="CGTN阿语" group-title="央视",CGTN阿语
 webview://https://yangshipin.cn/tv/home?pid=600084782
-#EXTINF:-1 tvg-name="CCTV风云剧场" group-title="央视频",CCTV 风云剧场
+#EXTINF:-1 tvg-name="CCTV风云剧场" group-title="央视",CCTV 风云剧场
 webview://https://yangshipin.cn/tv/home?pid=600099658
-#EXTINF:-1 tvg-name="CCTV第一剧场" group-title="央视频",CCTV 第一剧场
+#EXTINF:-1 tvg-name="CCTV第一剧场" group-title="央视",CCTV 第一剧场
 webview://https://yangshipin.cn/tv/home?pid=600099655
-#EXTINF:-1 tvg-name="CCTV怀旧剧场" group-title="央视频",CCTV 怀旧剧场
+#EXTINF:-1 tvg-name="CCTV怀旧剧场" group-title="央视",CCTV 怀旧剧场
 webview://https://yangshipin.cn/tv/home?pid=600099620
-#EXTINF:-1 tvg-name="北京卫视" group-title="央视频",北京卫视
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="北京卫视" group-title="卫视",北京卫视
 webview://https://yangshipin.cn/tv/home?pid=600002309
-#EXTINF:-1 tvg-name="江苏卫视" group-title="央视频",江苏卫视
+#EXTINF:-1 tvg-name="江苏卫视" group-title="卫视",江苏卫视
 webview://https://yangshipin.cn/tv/home?pid=600002521
-#EXTINF:-1 tvg-name="东方卫视" group-title="央视频",东方卫视
+#EXTINF:-1 tvg-name="东方卫视" group-title="卫视",东方卫视
 webview://https://yangshipin.cn/tv/home?pid=600002483
-#EXTINF:-1 tvg-name="浙江卫视" group-title="央视频",浙江卫视
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视",浙江卫视
 webview://https://yangshipin.cn/tv/home?pid=600002520
-#EXTINF:-1 tvg-name="湖南卫视" group-title="央视频",湖南卫视
+#EXTINF:-1 tvg-name="湖南卫视" group-title="卫视",湖南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002475
-#EXTINF:-1 tvg-name="湖北卫视" group-title="央视频",湖北卫视
+#EXTINF:-1 tvg-name="湖北卫视" group-title="卫视",湖北卫视
 webview://https://yangshipin.cn/tv/home?pid=600002508
-#EXTINF:-1 tvg-name="广东卫视" group-title="央视频",广东卫视
+#EXTINF:-1 tvg-name="广东卫视" group-title="卫视",广东卫视
 webview://https://yangshipin.cn/tv/home?pid=600002485
-#EXTINF:-1 tvg-name="广西卫视" group-title="央视频",广西卫视
+#EXTINF:-1 tvg-name="广西卫视" group-title="卫视",广西卫视
 webview://https://yangshipin.cn/tv/home?pid=600002509
-#EXTINF:-1 tvg-name="黑龙江卫视" group-title="央视频",黑龙江卫视
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视",黑龙江卫视
 webview://https://yangshipin.cn/tv/home?pid=600002498
-#EXTINF:-1 tvg-name="海南卫视" group-title="央视频",海南卫视
+#EXTINF:-1 tvg-name="海南卫视" group-title="卫视",海南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002506
-#EXTINF:-1 tvg-name="重庆卫视" group-title="央视频",重庆卫视
+#EXTINF:-1 tvg-name="重庆卫视" group-title="卫视",重庆卫视
 webview://https://yangshipin.cn/tv/home?pid=600002531
-#EXTINF:-1 tvg-name="深圳卫视" group-title="央视频",深圳卫视
+#EXTINF:-1 tvg-name="深圳卫视" group-title="卫视",深圳卫视
 webview://https://yangshipin.cn/tv/home?pid=600002481
-#EXTINF:-1 tvg-name="四川卫视" group-title="央视频",四川卫视
+#EXTINF:-1 tvg-name="四川卫视" group-title="卫视",四川卫视
 webview://https://yangshipin.cn/tv/home?pid=600002516
-#EXTINF:-1 tvg-name="河南卫视" group-title="央视频",河南卫视
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视",河南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002525
-#EXTINF:-1 tvg-name="东南卫视" group-title="央视频",福建东南卫视
+#EXTINF:-1 tvg-name="东南卫视" group-title="卫视",福建东南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002484
-#EXTINF:-1 tvg-name="贵州卫视" group-title="央视频",贵州卫视
+#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视",贵州卫视
 webview://https://yangshipin.cn/tv/home?pid=600002490
-#EXTINF:-1 tvg-name="江西卫视" group-title="央视频",江西卫视
+#EXTINF:-1 tvg-name="江西卫视" group-title="卫视",江西卫视
 webview://https://yangshipin.cn/tv/home?pid=600002503
-#EXTINF:-1 tvg-name="辽宁卫视" group-title="央视频",辽宁卫视
+#EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视",辽宁卫视
 webview://https://yangshipin.cn/tv/home?pid=600002505
-#EXTINF:-1 tvg-name="安徽卫视" group-title="央视频",安徽卫视
+#EXTINF:-1 tvg-name="安徽卫视" group-title="卫视",安徽卫视
 webview://https://yangshipin.cn/tv/home?pid=600002532
-#EXTINF:-1 tvg-name="河北卫视" group-title="央视频",河北卫视
+#EXTINF:-1 tvg-name="河北卫视" group-title="卫视",河北卫视
 webview://https://yangshipin.cn/tv/home?pid=600002493
-#EXTINF:-1 tvg-name="山东卫视" group-title="央视频",山东卫视
+#EXTINF:-1 tvg-name="山东卫视" group-title="卫视",山东卫视
 webview://https://yangshipin.cn/tv/home?pid=600002513
-#EXTINF:-1 tvg-name="天津卫视" group-title="央视频",天津卫视
+#EXTINF:-1 tvg-name="天津卫视" group-title="卫视",天津卫视
 webview://https://yangshipin.cn/tv/home?pid=600152137
-#EXTINF:-1 tvg-name="吉林卫视" group-title="央视频",吉林卫视
+#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视",吉林卫视
 webview://https://yangshipin.cn/tv/home?pid=600190405
-#EXTINF:-1 tvg-name="陕西卫视" group-title="央视频",陕西卫视
+#EXTINF:-1 tvg-name="陕西卫视" group-title="卫视",陕西卫视
 webview://https://yangshipin.cn/tv/home?pid=600190400
-#EXTINF:-1 tvg-name="甘肃卫视" group-title="央视频",甘肃卫视
+#EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视",甘肃卫视
 webview://https://yangshipin.cn/tv/home?pid=600190408
-#EXTINF:-1 tvg-name="宁夏卫视" group-title="央视频",宁夏卫视
+#EXTINF:-1 tvg-name="宁夏卫视" group-title="卫视",宁夏卫视
 webview://https://yangshipin.cn/tv/home?pid=600190737
-#EXTINF:-1 tvg-name="内蒙古卫视" group-title="央视频",内蒙古卫视
+#EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视",内蒙古卫视
 webview://https://yangshipin.cn/tv/home?pid=600190401
-#EXTINF:-1 tvg-name="云南卫视" group-title="央视频",云南卫视
+#EXTINF:-1 tvg-name="云南卫视" group-title="卫视",云南卫视
 webview://https://yangshipin.cn/tv/home?pid=600190402
-#EXTINF:-1 tvg-name="山西卫视" group-title="央视频",山西卫视
+#EXTINF:-1 tvg-name="山西卫视" group-title="卫视",山西卫视
 webview://https://yangshipin.cn/tv/home?pid=600190407
-#EXTINF:-1 tvg-name="青海卫视" group-title="央视频",青海卫视
+#EXTINF:-1 tvg-name="青海卫视" group-title="卫视",青海卫视
 webview://https://yangshipin.cn/tv/home?pid=600190406
-#EXTINF:-1 tvg-name="西藏卫视" group-title="央视频",西藏卫视
+#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视",西藏卫视
 webview://https://yangshipin.cn/tv/home?pid=600190403
-
-
-
-
-
-
-
-#EXTINF:-1 tvg-name="春晚1983年" group-title="春晚频道",春晚1983年
-https://alimov2.a.kwimgs.com/upic/2022/01/31/15/BMjAyMjAxMzExNTU5MTRfNDAzMDAxOTlfNjYyNzMxNjcwMjBfMF8z_b_Beb3bda599f76c60c463c433ca7460153.mp4
-#EXTINF:-1 tvg-name="春晚1984年" group-title="春晚频道",春晚1984年
-https://alimov2.a.kwimgs.com/upic/2022/01/31/15/BMjAyMjAxMzExNTU5NTRfNDAzMDAxOTlfNjYyNzMyMzg3MTRfMF8z_b_B192356dadbc90d207ba16964d4c2914c.mp4
-#EXTINF:-1 tvg-name="春晚1985年" group-title="春晚频道",春晚1985年
-https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDFfNDAzMDAxOTlfNjYyNzMyNTAwMzJfMF8z_b_Be73c5abcbc0eeb2ec9fce6842e1362a4.mp4
-#EXTINF:-1 tvg-name="春晚1986年" group-title="春晚频道",春晚1986年
-https://txmov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDRfNDAzMDAxOTlfNjYyNzMyNTU0OTRfMF8z_b_B24f7d19f1132fa5d7f502f8377ad5567.mp4
-#EXTINF:-1 tvg-name="春晚1987年" group-title="春晚频道",春晚1987年
-https://txmov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDhfNDAzMDAxOTlfNjYyNzMyNjMyMDNfMF8z_b_B570493ed8f7200d4013a66b2d21b2de9.mp4
-#EXTINF:-1 tvg-name="春晚1988年" group-title="春晚频道",春晚1988年
-https://txmov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMTJfNDAzMDAxOTlfNjYyNzMyNjkxNjBfMF8z_b_B8c835b83a92d25bde81ba22c5cd9521e.mp4
-#EXTINF:-1 tvg-name="春晚1989年" group-title="春晚频道",春晚1989年
-https://txmov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMTVfNDAzMDAxOTlfNjYyNzMyNzQ2OTlfMF8z_b_Be477b27b9ce655d2372df56a5a3d96ef.mp4
-#EXTINF:-1 tvg-name="春晚1991年" group-title="春晚频道",春晚1991年
-https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjI2MTVfNDAzMDAxOTlfNjYyNzYwNjUxNjVfMF8z_b_B8feb7b85888678d71bf37a259c6850f6.mp4
-#EXTINF:-1 tvg-name="春晚1992年" group-title="春晚频道",春晚1992年
-https://txmov2.a.kwimgs.com/bs3/video-hls/5256826755663896297_hlshd15.m3u8
-#EXTINF:-1 tvg-name="春晚1993年" group-title="春晚频道",春晚1993年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYwODJfMF8z_b_B647d10e431b4cc5e48e6c77347d69021.mp4
-#EXTINF:-1 tvg-name="春晚1994年" group-title="春晚频道",春晚1994年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxMjNfMF8z_b_B3dde97f36273f04403d4dc5eec611a35.mp4
-#EXTINF:-1 tvg-name="春晚1995年" group-title="春晚频道",春晚1995年
-https://txmov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQwNzVfMF8z_b_B811c0dec6b9a3d3074a18522c185010a.mp4
-#EXTINF:-1 tvg-name="春晚1996年" group-title="春晚频道",春晚1996年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxNTJfMF8z_b_Bd841eae10ab1c9955ef55fbedfae6c45.mp4
-#EXTINF:-1 tvg-name="春晚1997年" group-title="春晚频道",春晚1997年
-https://txmov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxNTJfMF8z_b_Bd841eae10ab1c9955ef55fbedfae6c45.mp4
-#EXTINF:-1 tvg-name="春晚1998年" group-title="春晚频道",春晚1998年
-https://txmov2.a.kwimgs.com/bs3/video-hls/5225864507896315430_hlshd15.m3u8
-#EXTINF:-1 tvg-name="春晚1999年" group-title="春晚频道",春晚1999年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQxNTRfMF8z_b_B0b5e52bc003285ef66ec0cbb2be08556.mp4
-#EXTINF:-1 tvg-name="春晚2000年" group-title="春晚频道",春晚2000年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxMTNfMF8z_b_Bdddf4e7ef0ff6cfd477857bb40e78419.mp4
-#EXTINF:-1 tvg-name="春晚2001年" group-title="春晚频道",春晚2001年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMDFfMF8z_b_B70592cb7c4054e9cabb675e849bbf4bd.mp4
-#EXTINF:-1 tvg-name="春晚2002年" group-title="春晚频道",春晚2002年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxNDdfMF8z_b_Ba6271d10b7e6cfae83759033a091f257.mp4
-#EXTINF:-1 tvg-name="春晚2003年" group-title="春晚频道",春晚2003年
-https://txmov2.a.kwimgs.com/upic/2023/01/14/23/BMjAyMzAxMTQyMzQxNDdfNDAzMDAxOTlfOTM2MTU0MTk1NDFfMF8z_b_B182749d2cd2ea9323639254af385f24b.mp4
-#EXTINF:-1 tvg-name="春晚2004年" group-title="春晚频道",春晚2004年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxOTVfMF8z_b_B86c4430b82ff5a7f4e8132f6ee558536.mp4
-#EXTINF:-1 tvg-name="春晚2005年" group-title="春晚频道",春晚2005年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMzhfMF8z_b_B35ad7cc86aec8fc9e5ddfb31fc7bed63.mp4
-#EXTINF:-1 tvg-name="春晚2006年" group-title="春晚频道",春晚2006年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyNzlfMF8z_b_Bbc3703fc331dc994c50859c19aad28ff.mp4
-#EXTINF:-1 tvg-name="春晚2007年" group-title="春晚频道",春晚2007年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzMjNfMF8z_b_B00b069c7899976459ceeaa99353dfefe.mp4
-#EXTINF:-1 tvg-name="春晚2008年" group-title="春晚频道",春晚2008年
-https://txmov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzNTNfMF8z_b_Bd7346962e61bd7b84e11a1fa6e4616f9.mp4
-#EXTINF:-1 tvg-name="春晚2009年" group-title="春晚频道",春晚2009年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzOTBfMF8z_b_B29a36a85e0277f6c2a1f033ef7c10708.mp4
-#EXTINF:-1 tvg-name="春晚2010年" group-title="春晚频道",春晚2010年
-https://txmov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ0MjlfMF8z_b_B8818807a00eed329a69fb494f405bd43.mp4
-#EXTINF:-1 tvg-name="春晚2011年" group-title="春晚频道",春晚2011年
-https://txmov2.a.kwimgs.com/upic/2023/01/16/11/BMjAyMzAxMTYxMTA3MjFfNDAzMDAxOTlfOTM3MjcyMjA3ODhfMF8z_b_B8214200efc869dc6fcf99dad619fa4c1.mp4
-#EXTINF:-1 tvg-name="春晚2013年" group-title="春晚频道",春晚2013年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ1NjNfMF8z_b_B4fea55408dca4471a68a963ae096be59.mp4
-#EXTINF:-1 tvg-name="春晚2014年" group-title="春晚频道",春晚2014年
-https://txmov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTNfNDAzMDAxOTlfOTI4OTY2ODAzNjlfMF8z_b_Bdee65c77f9e7b2120a185c919dad81d2.mp4
-#EXTINF:-1 tvg-name="春晚2015年" group-title="春晚频道",春晚2015年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ2MTZfMF8z_b_B4851f43f5a2bc2871a9b0ec87294a6e7.mp4
-#EXTINF:-1 tvg-name="春晚2017年" group-title="春晚频道",春晚2017年
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ2NDhfMF8z_b_B6527b0c2ce3dda1d9b3f34edd4fdb9aa.mp4
-#EXTINF:-1 tvg-name="春晚2018年" group-title="春晚频道",春晚2018年
-https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4
-#EXTINF:-1 tvg-name="春晚2019年" group-title="春晚频道",春晚2019年
-https://txmov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4
-#EXTINF:-1 tvg-name="春晚2020年" group-title="春晚频道",春晚2020年
-https://txmov2.a.kwimgs.com/upic/2022/01/30/17/BMjAyMjAxMzAxNzA5NDdfNDAzMDAxOTlfNjYxNzQ2MDAyMTFfMF8z_b_B5d51d9564c5670dc66faeba20aa7af3f.mp4
-#EXTINF:-1 tvg-name="春晚2021年" group-title="春晚频道",春晚2021年
-https://alimov2.a.kwimgs.com/upic/2022/01/30/17/BMjAyMjAxMzAxNzE4NTJfNDAzMDAxOTlfNjYxNzUzOTg3NjlfMF8z_b_Be41d9503181d7b0608a839ed401e02c2.mp4
-#EXTINF:-1 tvg-name="春晚2022年" group-title="春晚频道",春晚2022年
-https://txmov2.a.kwimgs.com/upic/2022/02/01/11/BMjAyMjAyMDExMTEwMjNfNDAzMDAxOTlfNjYzNzA4MTk4NzNfMF8z_b_B898cc7ddd0025bf54ddb18ec1f723c84.mp4
-#EXTINF:-1 tvg-name="春晚2023" group-title="春晚频道",春晚2023年
-https://txmov2.a.kwimgs.com/bs3/video-hls/5251197255879398624_hlshd15.m3u8
-#EXTINF:-1 tvg-name="春晚2024年" group-title="春晚频道",春晚2024年
-https://ikcdn01.ikzybf.com/20240205/QBNgom4j/2000kb/hls/index.m3u8
-#EXTINF:-1 tvg-name="春晚2025年" group-title="春晚频道",春晚2025年
-https://svip.high24-playback.com/20250129/17159_7bca93c4/2000k/hls/mixed.m3u8
-
-
-
-
-
-
-
-
-
-
-
-
-#EXTINF:-1 tvg-name="直播中国" group-title="直播中国",直播中国
-https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 tvg-name="都江堰鱼嘴" group-title="直播中国",广东深圳福田红树林
-https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山南天门" group-title="直播中国",西藏山南浪卡子县鲁日拉景观台
-https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江玉龙雪山草甸" group-title="直播中国",西藏林芝米林岷山彩门民宿
-https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
-#EXTINF:-1 tvg-name="青岛崂山八水河" group-title="直播中国",西藏日喀则珠穆朗玛峰
-https://gcalic.v.myalicdn.com/gc/qdls02_1/index.m3u8
-#EXTINF:-1 tvg-name="湖南张家界御笔峰" group-title="直播中国",西藏林芝工布江达县岷山错高民宿
-https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8
-#EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" group-title="直播中国",西藏林芝南迦巴瓦
-https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
-#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="直播中国",新疆昌吉州天山天池海西平台
-https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
-#EXTINF:-1 tvg-name="新疆天山" group-title="直播中国",新疆昌吉州天山天池定海神针
-http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江冰川" group-title="直播中国",新疆天山天池马牙山
-https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
-#EXTINF:-1 tvg-name="八里沟风景区桃花湾瀑布" group-title="直播中国",云南普洱景东县无量山羊山瀑布
-https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江玉龙雪山" group-title="直播中国",云南丽江玉龙雪山
-https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江蓝月谷" group-title="直播中国",云南保山板桥镇青龙街
-https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
-#EXTINF:-1 tvg-name="月牙泉" group-title="直播中国",云南德宏勐焕大金塔
-https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8
-#EXTINF:-1 tvg-name="张掖七彩丹霞" group-title="直播中国",云南保山比顿咖啡产业文化园
-https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
-#EXTINF:-1 tvg-name="雪乡梦幻家园" group-title="直播中国",云南昆明寻甸县城区
-https://gcalic.v.myalicdn.com/gc/mdjxxmhjyxj_1/index.m3u8
-#EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="直播中国",云南西双版纳千年古寨曼丢
-https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
-#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="直播中国",云南普洱澜沧县景迈山
-https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山始信新道" group-title="直播中国",云南红河民族风情旅游月亮小镇
-https://gcalic.v.myalicdn.com/gc/hsyg_1/index.m3u8
-#EXTINF:-1 tvg-name="丽江古城大研花巷观景" group-title="直播中国",云南丽江古城大研花巷观景
-https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
-#EXTINF:-1 tvg-name="中央电视塔南" group-title="直播中国",云南大理南涧县无量村古树茶园
-https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
-#EXTINF:-1 tvg-name="丽江古城万古楼遥望玉龙雪山" group-title="直播中国",云南丽江古城万古楼遥望玉龙雪山
-https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
-#EXTINF:-1 tvg-name="四川四姑娘山隆珠措" group-title="直播中国",云南保山隆阳区拦河坝水库
-https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
-#EXTINF:-1 tvg-name="天涯石" group-title="直播中国",云南大理云南驿茶马古道
-https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山主峰" group-title="直播中国",云南大理无量樱花谷
-https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
-#EXTINF:-1 tvg-name="浙江舟山东极岛" group-title="直播中国",浙江舟山东极岛
-https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山远眺贡嘎雪山" group-title="直播中国",浙江舟山嵊泗县中心渔港
-https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
-#EXTINF:-1 tvg-name="乌镇全景" group-title="直播中国",浙江乌镇白莲塔
-https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8
-#EXTINF:-1 tvg-name="乌镇蓝印花布" group-title="直播中国",浙江乌镇蓝印花布
-https://gcalic.v.myalicdn.com/gc/zjwzlyhb_1/index.m3u8
-#EXTINF:-1 tvg-name="乌镇西市河" group-title="直播中国",浙江乌镇西市河
-https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
-#EXTINF:-1 tvg-name="乌镇龙形田" group-title="直播中国",浙江乌镇龙形田
-https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山云海日出" group-title="直播中国",四川峨眉山云海日出
-https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
-#EXTINF:-1 tvg-name="乐山大佛全景" group-title="直播中国",乐山大佛全景
-https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
-#EXTINF:-1 tvg-name="云南大理崇圣寺三塔中景" group-title="直播中国",北京密云古水北镇
-https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
-#EXTINF:-1 tvg-name="六盘山红军长征景区" group-title="直播中国",北京门头沟清水镇黄安坨村
-https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
-#EXTINF:-1 tvg-name="黄花城水长城01" group-title="直播中国",北京黄花城水长城
-https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8
-#EXTINF:-1 tvg-name="黄花城水长城02" group-title="直播中国",安徽黄山卧云峰
-http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山飞来石" group-title="直播中国",安徽黄山飞来石
-https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8
-#EXTINF:-1 tvg-name="贵州省兴义市万峰林" group-title="直播中国",安徽黟县西递半山亭
-https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
-#EXTINF:-1 tvg-name="湖南张家界宝峰湖" group-title="直播中国",安徽宣城溪桃大桥
-https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8
-#EXTINF:-1 tvg-name="安徽黟县芦村远眺" group-title="直播中国",安徽黟县芦村远眺
-https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8
-#EXTINF:-1 tvg-name="安徽黟县西递牌坊" group-title="直播中国",安徽黟县西递牌坊
-https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8
-#EXTINF:-1 tvg-name="狮子山鸟瞰丽江古城" group-title="直播中国",江苏宿迁骆马湖罗曼园
-https://gcalic.v.myalicdn.com/gc/ljgcszsnkgc_1/index.m3u8
-#EXTINF:-1 tvg-name="南京玄武湖公园" group-title="直播中国",江苏南京玄武湖公园
-https://gcalic.v.myalicdn.com/gc/xwh01_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山十八盘" group-title="直播中国",江苏无锡大剧院
-https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山排云亭" group-title="直播中国",江苏徐州之夜
-https://gcalic.v.myalicdn.com/gc/hspyt_1/index.m3u8
-#EXTINF:-1 tvg-name="鸣沙山" group-title="直播中国",甘肃敦煌月牙泉
-https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
-#EXTINF:-1 tvg-name="黄花城水长城03" group-title="直播中国",山东济南趵突泉
-https://gcalic.v.myalicdn.com/gc/wgw03_1/index.m3u8
-#EXTINF:-1 tvg-name="丽江古城大水车" group-title="直播中国",沈阳辽宁浑河桥
-https://gcalic.v.myalicdn.com/gc/ljgcdsc_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江印象实景" group-title="直播中国",陕西西安大雁塔
-https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
-#EXTINF:-1 tvg-name="八里沟风景区天界山玻璃栈道" group-title="直播中国",陕西西安钟楼
-https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山望人松" group-title="直播中国",陕西咸阳乾陵景区
-https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
-#EXTINF:-1 tvg-name="云南白沙远眺玉龙雪山" group-title="直播中国",陕西渭南潼关县东山景区
-https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
-#EXTINF:-1 tvg-name="厦门鼓浪屿" group-title="直播中国",陕西渭南韩城市党家村景区
-https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
-#EXTINF:-1 tvg-name="恒山悬空寺全景" group-title="直播中国",陕西渭南蒲城县中心广场
-https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山" group-title="直播中国",陕西西安长安三河水库
-https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
-#EXTINF:-1 tvg-name="江苏南京牛首山" group-title="直播中国",陕西西安阎良关山石川河风景区
-https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山白云亭悬崖" group-title="直播中国",湖南邵阳莨山八角寨
-https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
-#EXTINF:-1 tvg-name="云南大理崇圣寺三塔远景" group-title="直播中国",湖南邵阳崀山骆驼峰
-https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山太平岭" group-title="直播中国",黑龙江哈尔滨霁虹桥
-https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山大观峰" group-title="直播中国",黑龙江萝北县嘟噜河省级自然保护区
-https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
-#EXTINF:-1 tvg-name="福建武夷山玉女峰" group-title="直播中国",福建南平武夷山玉女峰
-https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8
-#EXTINF:-1 tvg-name="福建漳州六鳌翡翠湾" group-title="直播中国",福建漳州六鳌翡翠湾
-http://gcalic.v.myalicdn.com/gc/fcw01_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 tvg-name="泰山玉皇顶" group-title="直播中国",内蒙古乌审旗萨拉乌苏考古遗迹公园
-https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山碧霞祠" group-title="直播中国",河北承德金山岭长城
-https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
-#EXTINF:-1 tvg-name="青岛崂山双福" group-title="直播中国",贵州黔东南加榜梯田
-https://gcalic.v.myalicdn.com/gc/qdls03_1/index.m3u8
-#EXTINF:-1 tvg-name="湖南张家界水绕四门" group-title="直播中国",贵州遵义赤水大瀑布
-https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8
-#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="直播中国",山西晋城釜山泫水湖
-https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山远眺万佛顶" group-title="直播中国",山西大同鼓楼
-https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
-#EXTINF:-1 tvg-name="雪乡大石碑" group-title="直播中国",青海门源仙米国家森林公园
-https://gcalic.v.myalicdn.com/gc/mdjxxdsb_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山普贤菩萨铜像" group-title="直播中国",青海省祁连山国家公园
-https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
-#EXTINF:-1 tvg-name="五彩池" group-title="直播中国",五彩池
-https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
-#EXTINF:-1 tvg-name="广西桂林漓江景区" group-title="直播中国",广西桂林漓江景区
-https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
-#EXTINF:-1 tvg-name="望乡台" group-title="直播中国",望乡台
-https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8
-#EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="直播中国",重庆渝中李子坝
-https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
-#EXTINF:-1 tvg-name="中央电视塔东" group-title="直播中国",河南南阳方城德云山景区
-https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
-#EXTINF:-1 tvg-name="普陀山" group-title="直播中国",河南焦作云台山红石峡
-https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
-#EXTINF:-1 tvg-name="黄果树六角亭瀑布" group-title="直播中国",河南商丘永城市日月湖景区
-https://gcalic.v.myalicdn.com/gc/hgsspzxdpb_1/index.m3u8
-#EXTINF:-1 tvg-name="黄龙" group-title="直播中国",河南鹤壁浚县古城景区北城门
-https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
-
-
-
-
-
-
-
-
-
-
-#EXTINF:-1 tvg-name="CCTV1" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-1 综合
-webview://https://tv.cctv.com/live/cctv1/
-#EXTINF:-1 tvg-name="CCTV2" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-2 财经
-webview://https://tv.cctv.com/live/cctv2/
-#EXTINF:-1 tvg-name="CCTV3" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-3 综艺
-webview://https://tv.cctv.com/live/cctv3/
-#EXTINF:-1 tvg-name="CCTV4" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-4 中文国际
-webview://https://tv.cctv.com/live/cctv4/
-#EXTINF:-1 tvg-name="CCTV4欧洲" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-4 中文国际 (欧)
-webview://https://tv.cctv.com/live/cctveurope/index.shtml
-#EXTINF:-1 tvg-name="CCTV4美洲" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-4 中文国际 (美)
-webview://https://tv.cctv.com/live/cctvamerica/
-#EXTINF:-1 tvg-name="CCTV5" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-5 体育
-webview://https://tv.cctv.com/live/cctv5/
-#EXTINF:-1 tvg-name="CCTV5+" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-5+ 体育赛事
-webview://https://tv.cctv.com/live/cctv5plus/
-#EXTINF:-1 tvg-name="CCTV6" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-6 电影
-webview://https://tv.cctv.com/live/cctv6/
-#EXTINF:-1 tvg-name="CCTV7" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-7 国防军事
-webview://https://tv.cctv.com/live/cctv7/
-#EXTINF:-1 tvg-name="CCTV8" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-8 电视剧
-webview://https://tv.cctv.com/live/cctv8/
-#EXTINF:-1 tvg-name="CCTV9" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-9 纪录
-webview://https://tv.cctv.com/live/cctvjilu/
-#EXTINF:-1 tvg-name="CCTV10" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-10 科教
-webview://https://tv.cctv.com/live/cctv10/
-#EXTINF:-1 tvg-name="CCTV11" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-11 戏曲
-webview://https://tv.cctv.com/live/cctv11/
-#EXTINF:-1 tvg-name="CCTV12" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-12 社会与法
-webview://https://tv.cctv.com/live/cctv12/
-#EXTINF:-1 tvg-name="CCTV13" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-13 新闻
-webview://https://tv.cctv.com/live/cctv13/
-#EXTINF:-1 tvg-name="CCTV14" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-14 少儿
-webview://https://tv.cctv.com/live/cctvchild/
-#EXTINF:-1 tvg-name="CCTV15" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-15 音乐
-webview://https://tv.cctv.com/live/cctv15/
-#EXTINF:-1 tvg-name="CCTV16" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-16 奥林匹克
-webview://https://tv.cctv.com/live/cctv16/
-#EXTINF:-1 tvg-name="CCTV17" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-17 农业农村
-webview://https://tv.cctv.com/live/cctv17/
-
-
-
-
-
-
 
 
