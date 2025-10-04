@@ -1,5 +1,9 @@
 #EXTM3U catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
+#EXTINF:-1 tvg-name="riben" group-title="18+",10495956
+webview://https://www.5c562ee1cfdb.com/s/video/shipin/1045956
+
+
 #EXTINF:-1 tvg-name="日本" group-title="18+",日本
 http://d3opspehgd3862dmfdp3sdf.siauliairsavlt.org/iptv/T7DRNUUUKCQLH6/6225/index.m3u8
 #EXTINF:-1 tvg-name="Live Cams" group-title="18+",Live Cams
