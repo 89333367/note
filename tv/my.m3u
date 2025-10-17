@@ -185,7 +185,7 @@ webview://https://yangshipin.cn/tv/home?pid=600190403
 
 
 #EXTINF:-1 tvg-name="CCTV1" group-title="备选" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-1 综合
-webview://https://m-live.cctvnews.cctv.com/live/landscape.html?liveRoomNumber=11200132825562653886&toc_style_id=feeds_only_back&share_to=copy_url&track_id=c3e89ea6-77d8-4230-89a3-a492aa16ee4c
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 
 
 
