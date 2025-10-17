@@ -197,6 +197,8 @@ webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=14
 #EXTINF:-1 tvg-name="江苏卫视" group-title="卫视",江苏卫视
 webview://https://live.jstv.com
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视",浙江卫视
+webview://https://www.cztv.com/liveTV/101
 
 
 
