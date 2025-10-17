@@ -185,7 +185,8 @@ webview://https://yangshipin.cn/tv/home?pid=600190403
 
 
 
-
+#EXTINF:-1 group-title="直播",电影嘉年华
+webview://https://m.1905.com/m/xl/live/?fr=1905app
 
 
 
