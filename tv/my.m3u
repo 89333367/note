@@ -193,6 +193,11 @@ webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
 
 
 
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视备选",河南卫视
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=14
+
+
+
 #EXTINF:-1 group-title="直播",电影嘉年华
 webview://https://m.1905.com/m/xl/live/?fr=1905app
 
