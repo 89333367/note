@@ -4,13 +4,10 @@ https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/README.md
 
 
 # 点播软件(影视TV版)
-https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/release/leanback-arm64_v8a.apk
+https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/leanback-arm64_v8a.apk
 
 # 点播软件(影视手机版)
-https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/release/mobile-arm64_v8a.apk
-
-# 点播软件(小苹果影视盒子)
-http://jar.xpgtv.xyz/box/XPGBOX-release-1.6.1.apk
+https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/mobile-arm64_v8a.apk
 
 # 点播源
 https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.txt
