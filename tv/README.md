@@ -22,5 +22,5 @@ https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/my.m3u
 
 
 ## 哔哩哔哩TV版
-https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.21/app-release.apk
+https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.26/app-release.apk
 
