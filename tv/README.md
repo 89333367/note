@@ -12,6 +12,8 @@ https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/mobile-ar
 #### 点播源
 https://tv.nxog.top/m/
 
+#### 更多点播源
+https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.txt
 
 # 直播软件
 ### 天光云影
