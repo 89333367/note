@@ -10,7 +10,7 @@ https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/leanback-
 https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/mobile-arm64_v8a.apk
 
 #### 点播源
-https://tv.nxog.top/m/
+https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.json
 
 #### 更多点播源
 https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.txt
