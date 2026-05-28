@@ -12,7 +12,6 @@ https://gh-proxy.org/https://github.com/FongMi/Release/blob/fongmi/apk/mobile-ar
 #### 点播源
 https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/fty.json
 https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/og.json
-https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/merged.json
 
 #### 更多点播源
 https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.txt
