@@ -16,6 +16,7 @@
 
 #### 更多点播源
 - https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/ys.txt
+- https://url19.ctfile.com/d/15741719-54086230-5406b3?p=wmdz&d=54086230&fk=d16ec0
 
 # 直播软件
 ### 天光云影
@@ -25,6 +26,11 @@
 - https://gh-proxy.org/https://github.com/89333367/note/blob/main/tv/my.m3u
 
 
-## 哔哩哔哩TV版
-- https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.26/app-release.apk
+# 其他软件
+
+### 哔哩哔哩TV版
+- https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.27/app-release.apk
+
+### 抖音TV版
+- https://gh-proxy.org/https://github.com/mytv-android/myDV/releases/download/V1.2.16/app-release.apk
 
