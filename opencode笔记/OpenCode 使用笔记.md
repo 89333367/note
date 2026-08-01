@@ -120,7 +120,24 @@ git --version
 python --version
 ```
 
-#### 1.5.4 OpenCode 安装
+#### 1.5.4 配置 GitHub 网络加速（可选，推荐国内用户配置）
+
+文档中多处提到使用 GitHub 账号登录，但国内网络访问 GitHub 可能不稳定。推荐使用 **Watt Toolkit**（原名 Steam++）来加速 GitHub 访问：
+
+**下载地址**：[https://steampp.net/](https://steampp.net/)
+
+安装后使用方法：
+
+1. 打开 Watt Toolkit
+2. 左侧导航栏点击 **网络加速**
+3. 在平台列表中 **务必勾选 GitHub**（可根据需要勾选其他平台）
+4. 点击上方刷新按钮旁的 **一键加速**
+
+加速成功后，GitHub 即可正常访问，后续登录、克隆等操作将不再受网络限制。
+
+> 该工具免费开源，不仅加速 GitHub，也支持 Steam、Discord 等平台，日常开发中很实用。
+
+#### 1.5.5 OpenCode 安装
 
 在终端中执行：
 
@@ -434,6 +451,8 @@ OpenCode 不局限于某个特定终端，可以在以下环境中使用：
 - 第三方终端（WezTerm、Alacritty、Windows Terminal 等）
 
 ### 5.1 推荐：在 VS Code 终端中使用
+
+[VS Code](https://code.visualstudio.com/)（Visual Studio Code）是微软推出的一款免费、开源代码编辑器，拥有丰富的扩展生态和强大的集成终端，是目前最主流的编辑器之一。
 
 我个人比较喜欢在 VS Code 的集成终端中使用 OpenCode，因为可以同时看到项目文件目录，操作更方便。
 
