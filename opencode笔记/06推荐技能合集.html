@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>06推荐技能合集.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="06-推荐技能合集">06 推荐技能合集</h1>
+<h2 id="如何使用技能">如何使用技能</h2>
+<p>在 OpenCode TUI 中有两种方式调用技能：</p>
+<ol>
+<li>按 <code>Ctrl+P</code> 打开命令面板，选择 <strong>Skills</strong>，即可看到已安装的技能列表并选择使用</li>
+<li>直接输入 <code>/skills</code> 命令，同样会弹出技能列表供选择</li>
+</ol>
+<h2 id="概述">概述</h2>
+<p>推荐 <a href="https://github.com/mattpocock/skills">mattpocock/skills</a> 技能合集，GitHub 上 <strong>198K+ stars</strong>，是目前最受欢迎的 AI 编码代理技能集。这些技能适合真实工程场景，而非简单的&quot;氛围编码&quot;。</p>
+<h2 id="安装">安装</h2>
+<pre class="hljs"><code><div>npx skills@latest add mattpocock/skills
+</div></code></pre>
+<p>按提示选择需要的技能，<strong>务必选中 <code>/setup-matt-pocock-skills</code></strong>。安装时选择目标代理选择 <strong>Claude Code</strong> 即可，因为列表中可能没有 OpenCode，但 OpenCode 可以读取 Claude Code 的技能文件。安装完成后，在 OpenCode 中运行 <code>/setup-matt-pocock-skills</code> 完成初始化配置。</p>
+<h2 id="我常用的技能">我常用的技能</h2>
+<h3 id="grill-with-docs最常用"><code>/grill-with-docs</code>（最常用）</h3>
+<p><strong>作用</strong>：Grilling 面试 + 领域建模。在深度追问你的需求的同时，自动构建项目的领域模型，更新 <code>CONTEXT.md</code> 和 ADR 文档。</p>
+<p><strong>使用场景</strong>：每次开始一个新功能或修改前使用。帮你对齐需求、理清术语、记录架构决策。</p>
+<p><strong>使用方式</strong>：在 OpenCode 中直接输入 <code>/grill-with-docs</code> 即可启动。</p>
+<hr>
+<h2 id="全部技能一览">全部技能一览</h2>
+<h3 id="工程类技能用户主动调用">工程类技能（用户主动调用）</h3>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>用途</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/grill-with-docs</code></td>
+<td>深度追问 + 领域建模，生成 CONTEXT.md 和 ADR</td>
+<td>每次开始新功能前</td>
+</tr>
+<tr>
+<td><code>/ask-matt</code></td>
+<td>技能路由器，询问当前该用哪个技能</td>
+<td>不确定该用哪个技能时</td>
+</tr>
+<tr>
+<td><code>/triage</code></td>
+<td>状态机驱动的 Issue 分类处理</td>
+<td>管理 GitHub Issues</td>
+</tr>
+<tr>
+<td><code>/improve-codebase-architecture</code></td>
+<td>扫描代码库，找出架构改进点，生成 HTML 报告</td>
+<td>代码库变得混乱时，建议每隔几天跑一次</td>
+</tr>
+<tr>
+<td><code>/setup-matt-pocock-skills</code></td>
+<td>初始化配置技能集（选择 Issue 跟踪器、标签等）</td>
+<td>首次安装后运行一次</td>
+</tr>
+<tr>
+<td><code>/to-spec</code></td>
+<td>将当前对话转为 Spec 并发布到 Issue 跟踪器</td>
+<td>需求已讨论清楚，需要正式记录下来</td>
+</tr>
+<tr>
+<td><code>/to-tickets</code></td>
+<td>将计划/对话拆分为可追踪的 Ticket</td>
+<td>需要将大任务拆解为小任务</td>
+</tr>
+<tr>
+<td><code>/implement</code></td>
+<td>根据 Spec 或 Ticket 实现功能，驱动 TDD 和 Code Review</td>
+<td>有了明确的 Spec 后开始编码</td>
+</tr>
+<tr>
+<td><code>/wayfinder</code></td>
+<td>规划超大型工作量，通过调查 Ticket 逐步明确路径</td>
+<td>面对庞大且不确定的项目时</td>
+</tr>
+</tbody>
+</table>
+<h3 id="工程类技能模型自动调用">工程类技能（模型自动调用）</h3>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>用途</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/tdd</code></td>
+<td>测试驱动开发，红-绿-重构循环</td>
+<td>需要确保代码质量时</td>
+</tr>
+<tr>
+<td><code>/diagnosing-bugs</code></td>
+<td>结构化 Bug 诊断流程：复现→最小化→假设→修复→回归测试</td>
+<td>遇到难以复现或复杂的 Bug</td>
+</tr>
+<tr>
+<td><code>/research</code></td>
+<td>在高可信度来源中调查问题，生成 Markdown 报告</td>
+<td>需要研究技术方案或 API 用法</td>
+</tr>
+<tr>
+<td><code>/prototype</code></td>
+<td>构建可丢弃的原型来验证设计思路</td>
+<td>不确定某个设计是否可行时</td>
+</tr>
+<tr>
+<td><code>/domain-modeling</code></td>
+<td>构建和打磨项目领域模型，挑战术语一致性</td>
+<td>需要明确领域概念和边界时</td>
+</tr>
+<tr>
+<td><code>/codebase-design</code></td>
+<td>深度模块设计：小接口背后的大行为</td>
+<td>需要设计或重构模块接口时</td>
+</tr>
+<tr>
+<td><code>/code-review</code></td>
+<td>双轴审查：编码规范 + 是否符合 Spec</td>
+<td>提交代码前进行审查</td>
+</tr>
+<tr>
+<td><code>/resolving-merge-conflicts</code></td>
+<td>逐块解决 Git 合并冲突，保留双方意图</td>
+<td>遇到合并冲突时</td>
+</tr>
+</tbody>
+</table>
+<h3 id="效率类技能用户主动调用">效率类技能（用户主动调用）</h3>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>用途</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/grill-me</code></td>
+<td>对计划/设计进行深度追问</td>
+<td>非代码类的决策需要厘清思路</td>
+</tr>
+<tr>
+<td><code>/handoff</code></td>
+<td>将当前对话压缩为交接文档</td>
+<td>需要让另一个 AI 继续当前工作</td>
+</tr>
+<tr>
+<td><code>/teach</code></td>
+<td>在多个会话中教授用户新技能</td>
+<td>想学习某个新概念或技术</td>
+</tr>
+<tr>
+<td><code>/writing-great-skills</code></td>
+<td>编写高质量技能的参考指南</td>
+<td>想自己编写或修改技能时</td>
+</tr>
+</tbody>
+</table>
+<h3 id="效率类技能模型自动调用">效率类技能（模型自动调用）</h3>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>用途</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/grilling</code></td>
+<td>对计划/决策进行持续追问，厘清每个分支</td>
+<td>作为 <code>/grill-me</code> 和 <code>/grill-with-docs</code> 的底层循环</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="推荐工作流">推荐工作流</h2>
+<ol>
+<li><strong>开始新功能前</strong> → <code>/grill-with-docs</code>（对齐需求 + 构建领域模型）</li>
+<li><strong>需求明确后</strong> → <code>/to-spec</code> 或 <code>/to-tickets</code>（生成 Spec 或 Ticket）</li>
+<li><strong>开始编码</strong> → <code>/implement</code>（驱动 TDD + Code Review）</li>
+<li><strong>遇到 Bug</strong> → <code>/diagnosing-bugs</code>（结构化排查）</li>
+<li><strong>代码库变混乱</strong> → <code>/improve-codebase-architecture</code>（改善架构）</li>
+<li><strong>做重大决策</strong> → <code>/grill-me</code>（厘清思路）</li>
+<li><strong>需要交接</strong> → <code>/handoff</code>（生成交接文档）</li>
+</ol>
+
+</body>
+</html>

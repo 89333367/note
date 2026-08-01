@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>01环境安装与配置.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="01-环境安装与配置">01 环境安装与配置</h1>
+<h2 id="什么是-opencode">什么是 OpenCode？</h2>
+<p><strong>OpenCode</strong> 是一个开源的 AI 编码代理（coding agent），可在终端、桌面应用或 IDE 扩展中使用。它由 anomalyco 团队开发，GitHub 上拥有 <strong>190K+ stars</strong>（24.2K forks），月活跃开发者 <strong>7.5M+</strong>（750万+），是目前最受欢迎的开源 AI 编码代理。</p>
+<p>与传统的代码补全工具不同，OpenCode 能：</p>
+<ul>
+<li>读取你的整个代码库，理解项目结构和编码模式</li>
+<li>规划并执行多文件更改，不限于单行建议</li>
+<li>运行终端命令、执行测试、迭代修复</li>
+<li>通过内置的 Plan 模式先分析再执行，避免盲目修改</li>
+</ul>
+<h2 id="核心特性">核心特性</h2>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>多提供商支持</strong></td>
+<td>支持 75+ LLM 提供商，可随时切换 Claude、GPT、Gemini、DeepSeek 或本地模型</td>
+</tr>
+<tr>
+<td><strong>双模式内置</strong></td>
+<td>Build 模式（完整权限）和 Plan 模式（只读分析），Tab 键一键切换</td>
+</tr>
+<tr>
+<td><strong>TUI 交互界面</strong></td>
+<td>终端原生 UI，支持 Vim 键位绑定，体验流畅</td>
+</tr>
+<tr>
+<td><strong>LSP 集成</strong></td>
+<td>语言服务器协议支持，智能代码导航</td>
+</tr>
+<tr>
+<td><strong>会话管理</strong></td>
+<td>持久化会话存储在 SQLite 中，可随时继续</td>
+</tr>
+<tr>
+<td><strong>本地优先</strong></td>
+<td>代码不离开本机（除非你主动选择云端模型）</td>
+</tr>
+<tr>
+<td><strong>零工具成本</strong></td>
+<td>工具本身免费，只需为调用的 LLM API 付费</td>
+</tr>
+<tr>
+<td><strong>并行多会话</strong></td>
+<td>支持同时运行多个 AI 代理在同一项目上工作</td>
+</tr>
+</tbody>
+</table>
+<h2 id="为什么选择-opencode">为什么选择 OpenCode？</h2>
+<ol>
+<li><strong>开源 + 免费</strong> — MIT 许可，无订阅费，只需自带模型 API Key</li>
+<li><strong>无供应商锁定</strong> — 不被绑定在 Anthropic 或 OpenAI 生态，随时可切换</li>
+<li><strong>终端原生</strong> — 不依赖特定 IDE，任何终端都能用</li>
+<li><strong>隐私可控</strong> — 本地优先架构，代码不强制上传</li>
+<li><strong>社区活跃</strong> — 190K+ stars（24.2K forks），7.5M+ 月活，插件生态丰富</li>
+</ol>
+<h2 id="与其他工具对比">与其他工具对比</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>OpenCode</th>
+<th>Claude Code</th>
+<th>OpenAI Codex</th>
+<th>Cursor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>开源</strong></td>
+<td>✅ MIT 开源</td>
+<td>❌ 闭源</td>
+<td>❌ 闭源（CLI 部分开源）</td>
+<td>❌ 闭源</td>
+</tr>
+<tr>
+<td><strong>价格</strong></td>
+<td>免费（自备模型 API）</td>
+<td>$20-200/月</td>
+<td>$20-200/月</td>
+<td>$20-200/月</td>
+</tr>
+<tr>
+<td><strong>模型选择</strong></td>
+<td>75+ 提供商，自由切换</td>
+<td>仅 Claude</td>
+<td>仅 OpenAI</td>
+<td>多模型但有限</td>
+</tr>
+<tr>
+<td><strong>运行环境</strong></td>
+<td>终端 / 桌面 / IDE</td>
+<td>终端 / IDE</td>
+<td>终端 / 云端</td>
+<td>IDE（VS Code 分支）</td>
+</tr>
+<tr>
+<td><strong>并行代理</strong></td>
+<td>✅ 多会话并行</td>
+<td>✅ Agent Teams</td>
+<td>✅ 多工作树</td>
+<td>✅ 8 个并行代理</td>
+</tr>
+<tr>
+<td><strong>SWE-bench 得分</strong></td>
+<td>取决于接入模型</td>
+<td>88.6%（Opus 4.8）</td>
+<td>82.7%（GPT-5.5）</td>
+<td>中等（Composer 2.5）</td>
+</tr>
+<tr>
+<td><strong>隐私控制</strong></td>
+<td>本地优先，完全可控</td>
+<td>数据发送到 Anthropic</td>
+<td>数据发送到 OpenAI</td>
+<td>代码会上传云端</td>
+</tr>
+<tr>
+<td><strong>社区生态</strong></td>
+<td>190K+ stars（24.2K forks），插件丰富</td>
+<td>官方支持</td>
+<td>官方支持</td>
+<td>360K+ 付费用户</td>
+</tr>
+</tbody>
+</table>
+<h3 id="适用场景速览">适用场景速览</h3>
+<ul>
+<li><strong>OpenCode</strong> → 想要开源、免费、终端原生、无供应商锁定的开发者</li>
+<li><strong>Claude Code</strong> → 需要最强推理能力处理复杂架构任务</li>
+<li><strong>Codex</strong> → 追求高速代码生成和异步云端任务委托</li>
+<li><strong>Cursor</strong> → 想要一体化 AI IDE 的全栈开发体验</li>
+</ul>
+<h2 id="安装方式">安装方式</h2>
+<h3 id="前提条件">前提条件</h3>
+<p>建议先安装以下工具，工作中基本都会用到：</p>
+<ul>
+<li><a href="https://nodejs.org/zh-cn">Node.js</a>（建议 LTS 版本）— OpenCode 运行所需</li>
+<li><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git">Git</a> — 版本控制。<strong>Windows 用户尤其建议安装</strong>，因为 OpenCode 默认使用 PowerShell，对 bash 命令支持不佳。安装 Git 后会自带 <strong>Git Bash</strong> 终端，在 OpenCode 中切换到 Git Bash 可避免中文乱码和命令兼容问题</li>
+<li><a href="https://www.python.org/downloads/">Python</a> — 数据脚本、自动化等</li>
+</ul>
+<h3 id="配置-npm-国内镜像可选推荐国内用户配置">配置 npm 国内镜像（可选，推荐国内用户配置）</h3>
+<p>由于国内网络环境，直接使用 npm 官方源可能很慢或无法下载，建议配置为淘宝镜像。</p>
+<p>在终端（cmd / PowerShell / Git Bash 均可，<strong>无需管理员权限</strong>）中执行：</p>
+<pre class="hljs"><code><div>npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
+</div></code></pre>
+<p>配置完成后验证：</p>
+<pre class="hljs"><code><div>npm config get registry
+</div></code></pre>
+<p>输出应为 <code>https://registry.npmmirror.com</code> 即配置成功。</p>
+<p>如需恢复官方源：</p>
+<pre class="hljs"><code><div>npm config <span class="hljs-built_in">set</span> registry https://registry.npmjs.org
+</div></code></pre>
+<h3 id="配置-pip-国内镜像可选推荐国内用户配置">配置 pip 国内镜像（可选，推荐国内用户配置）</h3>
+<p>同样，Python 的 pip 官方源在国内也可能较慢，建议配置为清华镜像。</p>
+<p>在终端（cmd / PowerShell / Git Bash 均可，<strong>无需管理员权限</strong>）中执行：</p>
+<pre class="hljs"><code><div>pip config <span class="hljs-built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</div></code></pre>
+<p>配置完成后验证：</p>
+<pre class="hljs"><code><div>pip config list
+</div></code></pre>
+<p>输出中应包含 <code>global.index-url=https://pypi.tuna.tsinghua.edu.cn/simple</code> 即配置成功。</p>
+<p>如需恢复官方源：</p>
+<pre class="hljs"><code><div>pip config <span class="hljs-built_in">unset</span> global.index-url
+</div></code></pre>
+<p>安装完成后在终端（cmd / PowerShell / Git Bash 均可）中验证：</p>
+<pre class="hljs"><code><div>node -v
+npm -v
+git --version
+python --version
+</div></code></pre>
+<h3 id="opencode-安装">OpenCode 安装</h3>
+<p>在终端中执行：</p>
+<pre class="hljs"><code><div>npm install -g opencode-ai
+</div></code></pre>
+<p>安装完成后验证：</p>
+<pre class="hljs"><code><div>opencode --version
+</div></code></pre>
+<p>输出版本号（如 <code>x.x.x</code>）即表示安装成功。</p>
+<blockquote>
+<p>其他安装方式（Scoop、Chocolatey、Homebrew、一键脚本等）请参考 https://opencode.ai/docs/</p>
+</blockquote>
+<hr>
+<h2 id="使用">使用</h2>
+<p>在终端中进入项目目录，然后运行 OpenCode 即可进入 TUI 交互界面：</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> /path/to/your/project
+opencode
+</div></code></pre>
+
+</body>
+</html>

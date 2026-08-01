@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>02模型配置.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="02-模型配置">02 模型配置</h1>
+<h2 id="方式一opencode-zen推荐">方式一：OpenCode Zen（推荐）</h2>
+<p>在 TUI 中运行 <code>/connect</code> 命令，选择 <code>opencode</code>，然后前往 <code>opencode.ai/auth</code> 登录并获取 API Key。</p>
+<pre class="hljs"><code><div>/connect
+</div></code></pre>
+<blockquote>
+<p>注意：Zen 没有独立的注册入口，需要使用 <strong>GitHub 账号</strong>或 <strong>Google 账号</strong>登录。如果没有这两个账号，请先注册。登录后 Zen 提供几个免费模型可直接使用（有使用限制），也可充值解锁更多模型。</p>
+</blockquote>
+<h2 id="方式二其他提供商">方式二：其他提供商</h2>
+<p>TUI 中运行 <code>/connect</code>，选择其他提供商（如 Anthropic、OpenAI、Google 等），按照提示输入 API Key。</p>
+<h2 id="方式三命令行配置">方式三：命令行配置</h2>
+<pre class="hljs"><code><div>opencode auth login
+</div></code></pre>
+<hr>
+<h2 id="免费模型配置">免费模型配置</h2>
+<h3 id="商汤-sensenova">商汤 SenseNova</h3>
+<p>注册地址：<a href="https://platform.sensenova.cn">https://platform.sensenova.cn</a></p>
+<p>注册成功后，在 <a href="https://platform.sensenova.cn/console/keys">https://platform.sensenova.cn/console/keys</a> 创建一个 API Key。</p>
+<blockquote>
+<p>商汤提供免费模型额度，适合入门体验和日常开发使用。可在 <a href="https://platform.sensenova.cn/console">https://platform.sensenova.cn/console</a> 查看使用量。</p>
+</blockquote>
+<h3 id="agnes">Agnes</h3>
+<p>注册地址：<a href="https://platform.agnes-ai.cn">https://platform.agnes-ai.cn</a></p>
+<p>注册成功后，在 <a href="https://platform.agnes-ai.cn/settings/apiKeys">https://platform.agnes-ai.cn/settings/apiKeys</a> 创建一个 API Key。</p>
+<h3 id="通过配置文件配置">通过配置文件配置</h3>
+<p>直接修改 OpenCode 配置文件（如果文件不存在，直接新建即可），路径如下：</p>
+<ul>
+<li><strong>macOS / Linux</strong>：<code>~/.config/opencode/opencode.jsonc</code></li>
+<li><strong>Windows</strong>：<code>C:\Users\您的用户名\.config\opencode\opencode.jsonc</code></li>
+</ul>
+<p><code>provider</code> 下可以配置任意多个大模型，选择其中一个或多个使用即可，不需要全部配置。将以下内容中的 <code>apiKey</code> 替换为你的实际密钥：</p>
+<pre class="hljs"><code><div><span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;$schema&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://opencode.ai/config.json&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;shell&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;bash&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 默认 shell；Windows 需安装 Git Bash 并配置此项</span>
+    <span class="hljs-attr">&quot;lsp&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 启用 LSP</span>
+    <span class="hljs-attr">&quot;provider&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">&quot;agnes&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+            <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;agnes&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;npm&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@ai-sdk/openai-compatible&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                <span class="hljs-attr">&quot;baseURL&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://api.agnes-ai.cn/v1&quot;</span><span class="hljs-punctuation">,</span>
+                <span class="hljs-attr">&quot;apiKey&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;密钥&quot;</span><span class="hljs-punctuation">,</span>
+                <span class="hljs-attr">&quot;setCacheKey&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span> <span class="hljs-comment">// 启用缓存，可降低 token 费用</span>
+            <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;models&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                <span class="hljs-attr">&quot;agnes-2.5-flash&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;agnes 2.5 flash&quot;</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;limit&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">512000</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 上下文窗口大小（token 数）</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">64000</span> <span class="hljs-comment">// 最大输出 token 数</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;modalities&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;input&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;image&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 支持输入类型：文本和图片</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">]</span> <span class="hljs-comment">// 支持输出类型：文本</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;chat_template_kwargs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                            <span class="hljs-attr">&quot;enable_thinking&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 启用思考/推理过程</span>
+                            <span class="hljs-attr">&quot;budget_tokens&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4096</span> <span class="hljs-comment">// 思考 token 预算上限</span>
+                        <span class="hljs-punctuation">}</span>
+                    <span class="hljs-punctuation">}</span>
+                <span class="hljs-punctuation">}</span>
+            <span class="hljs-punctuation">}</span>
+        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">&quot;sense-nova&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+            <span class="hljs-attr">&quot;npm&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@ai-sdk/openai-compatible&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Sense Nova&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                <span class="hljs-attr">&quot;baseURL&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://token.sensenova.cn/v1&quot;</span><span class="hljs-punctuation">,</span>
+                <span class="hljs-attr">&quot;apiKey&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;API Key&quot;</span><span class="hljs-punctuation">,</span>
+                <span class="hljs-attr">&quot;setCacheKey&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span> <span class="hljs-comment">// 启用缓存，可降低 token 费用</span>
+            <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;models&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                <span class="hljs-attr">&quot;sensenova-6.7-flash-lite&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;SenseNova 6.7 Flash-Lite&quot;</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;modalities&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;input&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;image&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 支持输入类型：文本和图片</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">]</span> <span class="hljs-comment">// 支持输出类型：文本</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;limit&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">256000</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 上下文窗口大小（token 数）</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">64000</span> <span class="hljs-comment">// 最大输出 token 数</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;reasoning_effort&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;high&quot;</span> <span class="hljs-comment">// 思考模式：none / low / medium / high</span>
+                    <span class="hljs-punctuation">}</span>
+                <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                <span class="hljs-attr">&quot;deepseek-v4-flash&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;DeepSeek v4 Flash&quot;</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;modalities&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;input&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 支持输入类型：文本</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;text&quot;</span><span class="hljs-punctuation">]</span> <span class="hljs-comment">// 支持输出类型：文本</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;limit&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1000000</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 上下文窗口大小（token 数）</span>
+                        <span class="hljs-attr">&quot;output&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">64000</span> <span class="hljs-comment">// 最大输出 token 数</span>
+                    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+                    <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                        <span class="hljs-attr">&quot;reasoning_effort&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;high&quot;</span> <span class="hljs-comment">// 思考模式：none / low / medium / high</span>
+                    <span class="hljs-punctuation">}</span>
+                <span class="hljs-punctuation">}</span>
+            <span class="hljs-punctuation">}</span>
+        <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</div></code></pre>
+<hr>
+<h2 id="切换模型">切换模型</h2>
+<p>在终端中进入项目目录启动 OpenCode：</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> /path/to/your/project
+opencode
+</div></code></pre>
+<p>在 TUI 中有两种方式切换模型：</p>
+<ol>
+<li>按 <code>Ctrl+P</code> 打开命令面板，选择 <strong>Switch Model</strong>，然后选择要使用的模型</li>
+<li>直接输入 <code>/models</code> 命令，查看并切换模型</li>
+</ol>
+
+</body>
+</html>
