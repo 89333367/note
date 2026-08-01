@@ -63,6 +63,15 @@
 - [Git](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git) — 版本控制。**Windows 用户尤其建议安装**，因为 OpenCode 默认使用 PowerShell，对 bash 命令支持不佳。安装 Git 后会自带 **Git Bash** 终端，在 OpenCode 中切换到 Git Bash 可避免中文乱码和命令兼容问题
 - [Python](https://www.python.org/downloads/) — 数据脚本、自动化等
 
+安装完成后在终端中验证：
+
+```bash
+node -v
+npm -v
+git --version
+python --version
+```
+
 #### 1.5.2 配置 npm 国内镜像（可选，推荐国内用户配置）
 
 由于国内网络环境，直接使用 npm 官方源可能很慢或无法下载，建议配置为淘宝镜像。
@@ -111,15 +120,6 @@ pip config list
 pip config unset global.index-url
 ```
 
-安装完成后在终端（cmd / PowerShell / Git Bash 均可）中验证：
-
-```bash
-node -v
-npm -v
-git --version
-python --version
-```
-
 #### 1.5.4 配置 GitHub 网络加速（可选，推荐国内用户配置）
 
 文档中多处提到使用 GitHub 账号登录，但国内网络访问 GitHub 可能不稳定。推荐使用 **Watt Toolkit**（原名 Steam++）来加速 GitHub 访问：
@@ -165,6 +165,8 @@ opencode --version
 cd /path/to/your/project
 opencode
 ```
+
+> 更多 OpenCode 配置项（主题、Shell、LSP 等）请参考中文文档：[https://www.opencodecn.com/docs/config](https://www.opencodecn.com/docs/config)
 
 ## 2. 模型配置
 
@@ -412,37 +414,7 @@ opencode mcp auth tinyfish
 
 如果都显示 `connected` 即表示配置成功。
 
-## 4. 快捷键配置
-
-### 4.1 为什么需要配置快捷键？
-
-OpenCode 默认按下 `Ctrl+C` 会直接退出 TUI，这在日常使用中很容易误触，导致正在进行的对话中断。通过配置快捷键，可以将退出操作改为其他组合键，避免误触。
-
-### 4.2 推荐配置
-
-在用户目录下创建 OpenCode 的 TUI 配置文件：
-
-- **macOS / Linux**：`~/.config/opencode/tui.json`
-- **Windows**：`C:\Users\您的用户名\.config\opencode\tui.json`
-
-如果该文件不存在，直接新建即可。内容如下：
-
-```jsonc
-{
-    "$schema": "https://opencode.ai/tui.json",
-    "keybinds": {
-        "app_exit": "ctrl+d,<leader>q"
-    }
-}
-```
-
-配置后，`Ctrl+C` 将不再退出 TUI，而是由终端处理（例如复制文本）。退出 TUI 直接在输入框中输入 `/exit` 命令即可。
-
-> 如果不小心退出了，可以在终端中执行 `opencode -c` 恢复上一个会话。
-
-更多快捷键配置请参考官方文档：[https://opencode.ai/docs/zh-cn/keybinds/](https://opencode.ai/docs/zh-cn/keybinds/)
-
-## 5. 在不同终端中使用
+## 4. 在不同终端中使用
 
 OpenCode 不局限于某个特定终端，可以在以下环境中使用：
 
@@ -450,17 +422,17 @@ OpenCode 不局限于某个特定终端，可以在以下环境中使用：
 - IDE 内置终端（VS Code、JetBrains IDEA 等）
 - 第三方终端（WezTerm、Alacritty、Windows Terminal 等）
 
-### 5.1 推荐：在 VS Code 终端中使用
+### 4.1 推荐：在 VS Code 终端中使用
 
 [VS Code](https://code.visualstudio.com/)（Visual Studio Code）是微软推出的一款免费、开源代码编辑器，拥有丰富的扩展生态和强大的集成终端，是目前最主流的编辑器之一。
 
 我个人比较喜欢在 VS Code 的集成终端中使用 OpenCode，因为可以同时看到项目文件目录，操作更方便。
 
-#### 5.1.1 VS Code 快捷键冲突问题
+#### 4.1.1 VS Code 快捷键冲突问题
 
 在 VS Code 终端中运行 OpenCode 时，VS Code 会拦截很多快捷键，导致 OpenCode 的快捷键无法正常使用。例如 `Ctrl+P` 会被 VS Code 拦截为"快速打开文件"，而不是发送给终端。
 
-#### 5.1.2 VS Code 配置
+#### 4.1.2 VS Code 配置
 
 需要在 VS Code 的 `settings.json` 中配置以下内容，将快捷键交还给终端处理：
 
@@ -490,7 +462,7 @@ OpenCode 不局限于某个特定终端，可以在以下环境中使用：
 }
 ```
 
-#### 5.1.3 关键参数说明
+#### 4.1.3 关键参数说明
 
 | 参数 | 作用 |
 |------|------|
@@ -498,6 +470,36 @@ OpenCode 不局限于某个特定终端，可以在以下环境中使用：
 | `terminal.integrated.commandsToSkipShell` | 控制哪些快捷键不发送给终端。前面加 `-` 表示从默认拦截列表中移除，将这些快捷键交还给终端处理 |
 
 配置完成后，在 VS Code 中打开终端，进入项目目录运行 `opencode` 即可正常使用。
+
+## 5. 快捷键配置
+
+### 5.1 为什么需要配置快捷键？
+
+OpenCode 默认按下 `Ctrl+C` 会直接退出 TUI，这在日常使用中很容易误触，导致正在进行的对话中断。通过配置快捷键，可以将退出操作改为其他组合键，避免误触。
+
+### 5.2 推荐配置
+
+在用户目录下创建 OpenCode 的 TUI 配置文件：
+
+- **macOS / Linux**：`~/.config/opencode/tui.json`
+- **Windows**：`C:\Users\您的用户名\.config\opencode\tui.json`
+
+如果该文件不存在，直接新建即可。内容如下：
+
+```jsonc
+{
+    "$schema": "https://opencode.ai/tui.json",
+    "keybinds": {
+        "app_exit": "ctrl+d,<leader>q"
+    }
+}
+```
+
+配置后，`Ctrl+C` 将不再退出 TUI，而是由终端处理（例如复制文本）。退出 TUI 直接在输入框中输入 `/exit` 命令即可。
+
+> 如果不小心退出了，可以在终端中执行 `opencode -c` 恢复上一个会话。
+
+更多快捷键配置请参考官方文档：[https://opencode.ai/docs/zh-cn/keybinds/](https://opencode.ai/docs/zh-cn/keybinds/)
 
 ## 6. 推荐技能合集
 
@@ -587,3 +589,15 @@ npx skills@latest add mattpocock/skills
 5. **代码库变混乱** → `/improve-codebase-architecture`（改善架构）
 6. **做重大决策** → `/grill-me`（厘清思路）
 7. **需要交接** → `/handoff`（生成交接文档）
+
+---
+
+### 快速上路
+
+如果你是第一次使用 OpenCode，按以下顺序操作即可：
+
+1. **安装 OpenCode** → 见 `1.5`，国内用户先配好 npm 镜像和 Watt Toolkit
+2. **配置模型** → 见 `2.4`，推荐用商汤或 Agnes 的免费模型先体验
+3. **配置 MCP** → 见 `3.4`，配好 Context7 和 TinyFish，让 AI 能查文档和联网
+4. **修改退出快捷键** → 见 `5.1`，避免 Ctrl+C 误触退出的尴尬
+5. **安装技能** → 见 `6.3`，装好技能集后用 `/grill-with-docs` 开始第一个需求
