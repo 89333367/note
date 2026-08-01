@@ -168,6 +168,14 @@ opencode
 
 > 更多 OpenCode 配置项（主题、Shell、LSP 等）请参考中文文档：[https://www.opencodecn.com/docs/config](https://www.opencodecn.com/docs/config)
 
+### 1.7 使用技巧：自动批准权限
+
+OpenCode 对当前项目内的文件操作默认不会有权限询问，但对项目外的操作（如修改系统文件、执行敏感命令）会弹出权限提示。如果你完全信任 OpenCode，可以开启自动批准，避免反复确认：
+
+按 `Ctrl+P` 打开命令面板，搜索 **auto**，找到并开启 **Enable auto-approve permissions** 即可。
+
+开启后所有操作将自动批准，不再弹权限提示。
+
 ## 2. 模型配置
 
 ### 2.1 方式一：OpenCode Zen（推荐）
