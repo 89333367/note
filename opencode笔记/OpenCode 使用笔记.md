@@ -60,7 +60,7 @@
 建议先安装以下工具，工作中基本都会用到：
 
 - [Node.js](https://nodejs.org/zh-cn)（建议 LTS 版本）— OpenCode 运行所需
-- [Git](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git) — 版本控制。**Windows 用户尤其建议安装**，因为 OpenCode 默认使用 PowerShell，对 bash 命令支持不佳。安装 Git 后会自带 **Git Bash** 终端，在 OpenCode 中切换到 Git Bash 可避免中文乱码和命令兼容问题
+- [Git](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git) — 版本控制。**Windows 用户尤其建议安装**，详见 `7.1`
 - [Python](https://www.python.org/downloads/) — 数据脚本、自动化等
 
 安装完成后在终端中验证：
@@ -367,7 +367,7 @@ TinyFish 是一个联网搜索和抓取 MCP，可以让 AI 进行网络搜索、
 
 ### 3.5 配置文件示例
 
-在 OpenCode 配置文件（`~/.config/opencode/opencode.jsonc`）中添加 `mcp` 字段：
+在 OpenCode 配置文件（**macOS / Linux**：`~/.config/opencode/opencode.jsonc`，**Windows**：`C:\Users\你的用户名\.config\opencode\opencode.jsonc`）中添加 `mcp` 字段：
 
 ```jsonc
 {
@@ -598,14 +598,73 @@ npx skills@latest add mattpocock/skills
 6. **做重大决策** → `/grill-me`（厘清思路）
 7. **需要交接** → `/handoff`（生成交接文档）
 
----
+## 7. 推荐配置
 
-### 快速上路
+### 7.1 Windows 用户：安装 Git 并配置 Shell
 
-如果你是第一次使用 OpenCode，按以下顺序操作即可：
+OpenCode 默认使用系统终端（Windows 下为 PowerShell），但 PowerShell 对 bash 命令支持不佳，可能导致中文乱码或命令执行失败。
 
-1. **安装 OpenCode** → 见 `1.5`，国内用户先配好 npm 镜像和 Watt Toolkit
-2. **配置模型** → 见 `2.4`，推荐用商汤或 Agnes 的免费模型先体验
-3. **配置 MCP** → 见 `3.4`，配好 Context7 和 TinyFish，让 AI 能查文档和联网
-4. **修改退出快捷键** → 见 `5.1`，避免 Ctrl+C 误触退出的尴尬
-5. **安装技能** → 见 `6.3`，装好技能集后用 `/grill-with-docs` 开始第一个需求
+**解决方案**：安装 Git，并在 OpenCode 配置文件中将 Shell 切换为 Git Bash。
+
+#### 步骤 1：安装 Git
+
+下载地址：[https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+
+安装时保持默认选项即可，安装完成后 Git Bash 会自动可用。
+
+#### 步骤 2：配置 `"shell": "bash"`
+
+打开 OpenCode 配置文件（`C:\Users\你的用户名\.config\opencode\opencode.jsonc`），添加或修改 `shell` 字段：
+
+```jsonc
+{
+    "$schema": "https://opencode.ai/config.json",
+    "shell": "bash",   // ← 将默认 shell 从 PowerShell 切换为 Git Bash
+    "lsp": true,
+    // ... 其他配置
+}
+```
+
+配置后重启 OpenCode，所有命令将通过 Git Bash 执行，中文乱码和命令兼容问题将不再出现。
+
+### 7.2 LSP 配置
+
+LSP（Language Server Protocol，语言服务器协议）为 OpenCode 提供代码智能导航能力——跳转到定义、查找引用、悬停提示等。开启后 OpenCode 能更好地理解代码结构，提升代码修改的准确性。
+
+打开 OpenCode 配置文件（**macOS / Linux**：`~/.config/opencode/opencode.jsonc`，**Windows**：`C:\Users\你的用户名\.config\opencode\opencode.jsonc`），设置 `"lsp": true` 即可启用：
+
+```jsonc
+{
+    "$schema": "https://opencode.ai/config.json",
+    "shell": "bash",
+    "lsp": true,   // ← 启用 LSP
+    // ... 其他配置
+}
+```
+
+启用后 OpenCode 会自动检测已安装的语言服务器。TypeScript / JavaScript 内置支持，无需额外安装。其他语言需要手动安装对应的语言服务器，以下是常见语言的安装方式：
+
+| 语言 | 安装命令 | 说明 |
+|------|----------|------|
+| Python | `pip install pyright` 或 `pip install pylsp` | 推荐 Pyright，性能更好 |
+| Go | `go install golang.org/x/tools/gopls@latest` | Go 官方语言服务器 |
+| Rust | `rustup component add rust-analyzer` | Rust 官方语言服务器 |
+| Lua | `npm install -g lua-language-server` | 需要 Lua 5.1+ |
+| C / C++ | `npm install -g clangd` | 需要已安装 clangd |
+| Java | 安装 JDK 21+ 后自动启用 | OpenCode 内置 jdtls，无需手动配置；需要 JDK 21+ 运行语言服务器，与项目 JDK 版本无关 |
+
+> **如果系统默认 JDK 版本低于 21**：jdtls 启动时会因版本不足而失败。不需要修改全局的 `JAVA_HOME`（否则项目编译版本会被改变），只需在 OpenCode 配置中指定 jdtls 使用 JDK 21 即可：
+>
+> ```jsonc
+> {
+>     "lsp": {
+>         "jdtls": {
+>             "env": {
+>                 "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21的路径"
+>             }
+>         }
+>     }
+> }
+> ```
+
+配置完成后，在 OpenCode 中运行 `/lsp` 命令即可查看当前已连接的语言服务器状态。
