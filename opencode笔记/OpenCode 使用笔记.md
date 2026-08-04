@@ -170,7 +170,7 @@ opencode
 
 ## 2. 模型配置
 
-### 2.1 方式一：OpenCode Zen（推荐）
+### 2.1 方式一：OpenCode Zen
 
 在 TUI 中运行 `/connect` 命令，选择 `opencode`，然后前往 `opencode.ai/auth` 登录并获取 API Key。
 
@@ -182,7 +182,7 @@ opencode
 
 ### 2.2 方式二：其他提供商
 
-TUI 中运行 `/connect`，选择其他提供商（如 Anthropic、OpenAI、Google 等），按照提示输入 API Key。
+TUI 中运行 `/connect`，选择其他提供商，推荐 [DeepSeek](https://platform.deepseek.com/api_keys)，按照提示输入 API Key。
 
 ### 2.3 方式三：命令行配置
 
@@ -194,7 +194,7 @@ opencode auth login
 
 ### 2.4 免费模型配置
 
-#### 2.4.1 商汤 SenseNova
+#### 2.4.1 商汤 SenseNova（推荐）
 
 注册地址：[https://platform.sensenova.cn](https://platform.sensenova.cn)
 
