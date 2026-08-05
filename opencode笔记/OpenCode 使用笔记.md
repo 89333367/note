@@ -776,9 +776,28 @@ OpenCode 内置了大量斜杠命令（输入 `/` 即可查看全部），以下
 
 OpenCode 对当前项目内的文件操作默认不会有权限询问，但对项目外的操作（如修改系统文件、执行敏感命令）会弹出权限提示。如果你完全信任 OpenCode，可以开启自动批准，避免反复确认：
 
+#### 方式一：通过命令面板开启
+
 按 `Ctrl+P` 打开命令面板，搜索 **auto**，找到并开启 **Enable auto-approve permissions** 即可。
 
+> **注意**：此方式仅在当前窗口生效，关闭 OpenCode 后恢复默认行为，下次启动需要重新开启。
+
 开启后所有操作将自动批准，不再弹权限提示。
+
+#### 方式二：修改配置文件
+
+在 OpenCode 配置文件（**macOS / Linux**：`~/.config/opencode/opencode.jsonc`，**Windows**：`C:\Users\你的用户名\.config\opencode\opencode.jsonc`）中添加 `permission` 字段：
+
+```jsonc
+{
+    "$schema": "https://opencode.ai/config.json",
+    "shell": "bash",
+    "permission": "allow", // 赋予 opencode 所有权限，可以读写项目范围外的文件
+    // ... 其他配置
+}
+```
+
+设置后重启 OpenCode 生效，且所有窗口永久保持该设置，无需重复配置。
 
 ### 9.4 查看 Token 用量统计
 
