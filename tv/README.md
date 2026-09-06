@@ -29,8 +29,5 @@
 # 其他软件
 
 ### 哔哩哔哩TV版
-- https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.27/app-release.apk
-
-### 抖音TV版
-- https://gh-proxy.org/https://github.com/mytv-android/myDV/releases/download/V1.2.16/app-release.apk
+- https://gh-proxy.org/https://github.com/cat3399/blbl/releases/download/v0.1.29/app-release.apk
 
