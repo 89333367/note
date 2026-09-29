@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "apiKey": "OmniRoute",
+      "id": "auto",
+      "maxInputTokens": 256000,
+      "maxOutputTokens": 65536,
+      "name": "OmniRoute",
+      "onlyReasoning": true,
+      "reasoning": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "supportedEfforts": [
+          "high"
+        ]
+      },
+      "supportsImages": true,
+      "supportsReasoning": true,
+      "supportsToolCall": true,
+      "url": "http://127.0.0.1:20128/v1",
+      "useCustomProtocol": false,
+      "vendor": "Custom"
+    }
+  ]
+}
