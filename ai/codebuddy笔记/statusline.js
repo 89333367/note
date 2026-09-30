@@ -163,7 +163,10 @@ function tokensFromTranscript(transcriptPath) {
     const cacheTotal = cacheRead + cacheCreation + freshInput;
     if (cacheRead > 0) {
       const hitPct = (cacheRead / cacheTotal) * 100;
-      tokenStr += `${C.green} ♻️ ${hitPct.toFixed(0)}%${C.reset}`;
+      // 缓存图标必须用"真 emoji"（U+1F300 区段，如 🔁）：像 ♻(U+267B) 这类
+      // 文本符号在 VSCode 终端按宽度 1 测量，但字体回退到 Segoe UI Emoji 后
+      // 按双宽渲染，会盖住后面的空格。真 emoji 测量/渲染都是宽度 2，两终端一致。
+      tokenStr += `${C.green} 🔁 ${hitPct.toFixed(0)}%${C.reset}`;
     }
   }
 
